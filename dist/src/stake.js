@@ -56,5 +56,15 @@ const stake = (_a) => __awaiter(void 0, [_a], void 0, function* ({ witness = fal
     console.log(`txId: ${txId}`);
     console.log(`address: ${scriptAddress}`);
     console.log(`redeemScript: ${redeemScript}`);
+    let amountBtc = new bignumber_js_1.default(amount);
+    amountBtc = amountBtc.dividedBy(1e8);
+    console.log(`amount: ${amount} SAT (${amountBtc} BTC)`);
+    console.log(`validatorAddress: ${validatorAddress}`);
+    console.log(`rewardAddress: ${rewardAddress}`);
+    console.log(`privateKey: ${privateKey}`);
+    console.log(`account: ${account}`);
+    console.log(`publicKey: ${publicKey}`);
+    const date = new Date(lockTime * 1000);
+    console.log(`lockTime: ${lockTime} (${date.toUTCString()})`);
 });
 exports.stake = stake;
