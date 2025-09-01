@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: btc-staking-tool
+  annotations:
+    github.com/project-slug: geek197/btc-staking-tool
+spec:
+  type: other
+  lifecycle: unknown
